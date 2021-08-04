@@ -1,3 +1,4 @@
+
 <h1 align="center">  Inventory Management API (IMA)</h1>
 
 ## 🚩 &nbsp; Main Features
@@ -8,7 +9,6 @@
 #### Backend Modules Used
 
  - Express
- - Nodemon
  - Mongoose
  - Json Web Token (For authentication)
  - bcryptjs (for data encryption)
@@ -23,7 +23,7 @@
 ***************************************************************************************************
 **To Signup and Login**
   - Everyone is registered as a user using "/users/signup"
-    Registered User's details is validated to correctness using the auth.js before it is acccepted
+  - Registered User's details is validated to correctness using the auth.js before it is acccepted
   - Registered user can signin using "/users/login"
 
 **Create, Update, Delete and Get all products**
@@ -51,6 +51,6 @@ $ npm start (for Node server side development)
 # Author
 
 👤 &nbsp; 
-  **Ogbeni Fidelis**,
-  **Abdulkadir Minur**,
+  **Ogbeni Fidelis**<br>
+  **Abdulkadir Minur**<br>
   **Oyibo Delmas**
