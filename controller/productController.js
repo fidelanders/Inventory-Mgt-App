@@ -24,7 +24,6 @@ exports.addProduct = async (req, res) => {
     }
 }
 
-
 //getting all products
 exports.getProducts = async (req, res) => {
     const userid=req.user._id
