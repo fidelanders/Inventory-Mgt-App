@@ -1,4 +1,4 @@
-<h1 align="center">  Inventory Management App</h1>
+<h1 align="center">  Inventory Management API (IMA)</h1>
 
 ## 🚩 &nbsp; Main Features
 
