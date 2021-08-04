@@ -8,7 +8,6 @@
 #### Backend Modules Used
 
  - Express
- - Nodemon
  - Mongoose
  - Json Web Token (For authentication)
  - bcryptjs (for data encryption)
