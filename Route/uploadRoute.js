@@ -1,16 +1,10 @@
-var express = require('express')
-var multer  = require('multer')
-var upload = multer({ dest: 'uploads/' })
- 
-var app = express()
+const multer = require ('multer')
 
-const Router = express.Router();
+const express = require ("express");
+const { storage } = require('../database/db');
+const { uploadImg } = require('../controller/uploadController')
+const router = express.Router();
 
-Router.use(express.urlencoded({ extended: true }));
-
-Router.use(express.json());
-
-Router.post('/upload',)
-
-
-module.exports = Router;
+//upload product Image
+router.post("/image", uploadImg)
+module.exports = router;

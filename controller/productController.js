@@ -1,7 +1,7 @@
 
 const { response } = require('express');
 const User = require('../model/userModel');
-const utils = require('../utils/utils');
+const utils = require('../database/auth');
 const Product = require('../model/productModel');
 
 //creating a new products

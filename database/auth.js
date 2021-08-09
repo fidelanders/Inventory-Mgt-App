@@ -36,6 +36,6 @@ exports.isCorrectPassword = async (password, orignalPassword) => {
 
 }
  exports.genUserToken = async (userid) => {
-     const token = await jwt.sign({userid}, process.env.SECRET,{expiresIn:process.env.JWT_EXPIRES_IN})
+     const token = await jwt.sign({userid}, process.env.JWT_SECRET,{expiresIn:process.env.JWT_EXPIRES_IN})
      return token
  }

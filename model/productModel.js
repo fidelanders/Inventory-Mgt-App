@@ -1,4 +1,4 @@
-const mongoose = require('../utils/database')
+const mongoose = require('../database/db')
 
 
 const productSchema = mongoose.Schema({

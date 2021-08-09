@@ -1,6 +1,6 @@
 const { response } = require('express');
 const User = require('../model/userModel');
-const utils = require('../utils/utils');
+const utils = require('../database/auth');
 
 exports.signUp = async (req, res) => {
     const body = req.body;
@@ -14,7 +14,6 @@ exports.signUp = async (req, res) => {
             const response = await User.addUser(user)
             res.status(201).json({
                 message: 'User Account Creation Successful!',
-                
             });
          }
         else {
@@ -28,10 +27,8 @@ exports.signUp = async (req, res) => {
         res.status(406).json({
             status: 'failed!',
             message: 'Email Already exist'
-            })
-        
+            })   
     }
-
 }
 exports.login= async (req, res) => {
     let { email, password } = req.body;
