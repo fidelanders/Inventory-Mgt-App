@@ -17,9 +17,9 @@ PORT = process.env.PORT;
 //   console.log(url)
 // })();
 
+
 app.get("/", (req, res)=>{
 res.json("Welcome to Inventory Mgt API")
-
 })
 
 //mounting users routes

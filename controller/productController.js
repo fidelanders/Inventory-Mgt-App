@@ -7,16 +7,15 @@ const Product = require('../model/productModel');
 //creating a new products
 exports.addProduct = async (req, res) => {
     const body = req.body;
-    
     let user = req.user;
     let userid = user._id
-    let product = { brandName, model, description, engineType, categories, mileage, price, year, imageUrl, numberInStock}  = body;
+    let product = { productName, model, desc, price, imageUrl, numberInStock}  = body;
     product.userid = userid;
     
     let response;
     try{
         response = await Product.create({...product})
-        res.json(response)
+        res.json(req.body)
         
     }
     catch(err){
