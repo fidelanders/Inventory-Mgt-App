@@ -1,10 +1,8 @@
 const mongoose = require('../database/db')
 
 
-const userSchema = mongoose.Schema({
-    firstName: { type: String, required: true },
-    lastName: { type: String, required: false },
-    email: { type: String, required: true },
+const Admin = mongoose.Schema({
+        email: { type: String, required: true },
     password: { type: String, required: true },
     cars: {type:mongoose.Schema.Types.ObjectId,ref:'Cars'},
 });

@@ -1,10 +1,6 @@
-require('dotenv').config()
+const dotenv = require('dotenv').config()
 const express = require('express');
-const multer = require("multer");
-const { storage } = require('./database/db');
 const userRoute = require('./Route/userRoute')
-const uploadRoute = require('./Route/uploadRoute')
-const productRoute = require('./Route/productRoute')
 const app = express();
 
 PORT = process.env.PORT;
@@ -19,13 +15,12 @@ PORT = process.env.PORT;
 
 
 app.get("/", (req, res)=>{
-res.json("Welcome to Inventory Mgt API")
+res.json("Welcome to EMERGENCY REPORT APP API")
 })
 
 //mounting users routes
 app.use('/users', userRoute);
-app.use('/products', productRoute);
-app.use("/product", uploadRoute);
+
 
 // connecting and listening to server 
 app.listen(PORT, () => {
