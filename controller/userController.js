@@ -32,6 +32,7 @@ const signUp = async (req, res) => {
     }
 }
 
+
 const login= async (req, res) => {
     let { email, password } = req.body;
     const user = await User.getUser(email);
@@ -57,6 +58,7 @@ const login= async (req, res) => {
         }
     }
 }
+
 
 const updateData = async (req, res) => {
     const id = req.params.id;
